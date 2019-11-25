@@ -25,7 +25,6 @@ const logWeather = ({ date, temp }: { date: Date; temp: number }): void => {
 
 const { date }: { date: Date } = weather;
 // or just const { date }: { date: Date } = weather;
-
 console.log(date);
 
 logWeather(weather);
