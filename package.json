@@ -7,5 +7,8 @@
   },
   "repository": "https://github.com/dwyfrequency/typescript_udemy.git",
   "author": "Jack Dwyer <jdwy215@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
 }
