@@ -1,3 +1,6 @@
+// public, anyone can access
+// protected, class methods and child-class methods can access
+// private, class methods can access
 class Vehicle {
   public honk(): void {
     console.log("beep");
