@@ -1,0 +1,11 @@
+{
+  "name": "mono",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node"
+  },
+  "repository": "https://github.com/dwyfrequency/typescript_udemy.git",
+  "author": "Jack Dwyer <jdwy215@gmail.com>",
+  "license": "MIT"
+}
