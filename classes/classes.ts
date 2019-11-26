@@ -2,6 +2,8 @@
 // protected, class methods and child-class methods can access
 // private, class methods can access
 class Vehicle {
+  constructor(public color?: string) {}
+
   public honk(): void {
     console.log("beep");
   }
@@ -30,3 +32,4 @@ const car = new Car();
 car.startDrivingProcess();
 car.honk();
 car.aquireCurrency();
+console.log(car.color);
