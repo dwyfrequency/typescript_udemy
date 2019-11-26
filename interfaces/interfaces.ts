@@ -1,7 +1,10 @@
-interface Vehicle {
+interface Vehicle extends Reportable {
   name: string;
   year: number;
   broken: boolean;
+}
+
+interface Reportable {
   summary(): string;
 }
 
@@ -14,6 +17,7 @@ const oldcivic = {
   },
 };
 
-const printVehicle = (vehicle: Vehicle): void => console.log(vehicle.summary());
+const printVehicle = (reportableObj: Reportable): void =>
+  console.log(reportableObj.summary());
 
 printVehicle(oldcivic);
