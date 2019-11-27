@@ -1,3 +1,5 @@
-import User from "./User";
+import { User } from "./User";
 console.log("hello");
-console.log(User);
+const user = new User();
+
+console.log(user);
