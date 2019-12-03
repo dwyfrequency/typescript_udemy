@@ -1,6 +1,4 @@
-import { User } from "./User";
-
-interface Coords {
+interface Mappable {
   location: { lat: number; lon: number };
 }
 
@@ -17,12 +15,12 @@ export class CustomMap {
     });
   }
 
-  addUserMarker(obj: Coords): void {
+  addMarker(mappable: Mappable): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
-        lat: obj.location.lat,
-        lng: obj.location.lon,
+        lat: mappable.location.lat,
+        lng: mappable.location.lon,
       },
     });
   }
