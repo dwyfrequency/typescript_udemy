@@ -9,4 +9,5 @@ import { CustomMap } from "./CustomMap";
 console.log(user);
 console.log(company);
 
-new CustomMap();
+const customMap = new CustomMap("map");
+customMap.addUserMarker(user);
