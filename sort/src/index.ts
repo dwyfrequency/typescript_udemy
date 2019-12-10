@@ -2,9 +2,11 @@ class Sorter {
   constructor(public collection: number[]) {}
 
   private swap(idx1: number, idx2: number): void {
-    const temp = this.collection[idx1];
-    this.collection[idx1] = this.collection[idx2];
-    this.collection[idx2] = temp;
+    if (this.collection instanceof Array) {
+      const temp = this.collection[idx1];
+      this.collection[idx1] = this.collection[idx2];
+      this.collection[idx2] = temp;
+    }
   }
 
   sort(): void {
