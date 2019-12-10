@@ -10,8 +10,10 @@ export class CharacterCollection {
   }
 
   swap(leftIdx: number, rightIdx: number): void {
-    this.data = `${this.data.slice(0, leftIdx)}${this.data[rightIdx]}${
-      this.data[leftIdx]
-    }${this.data[rightIdx + 1]}`;
+    const arr = this.data.split('');
+    const temp = this.data[leftIdx];
+    arr[leftIdx] = this.data[rightIdx];
+    arr[rightIdx] = temp;
+    this.data = arr.join('');
   }
 }
