@@ -2,6 +2,7 @@ import { NumbersCollection } from './NumbersCollection';
 
 interface Sortable {
   length: number;
+  // for functions, the param names do not need to match in spelling. They only need the same time and number
   compare(leftIdx: number, rightIdx: number): boolean;
   swap(leftIdx: number, rightIdx: number): void;
 }
